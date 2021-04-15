@@ -1,0 +1,83 @@
+.applyContainer {
+    padding: 0 0 160px;
+}
+.applyLogo {
+    text-align: center;
+    padding: 120px 0 40px;
+}
+.applyButtonWrapper {
+    padding: 40px 0 0px;
+    text-align: center;
+}
+.applyButton {
+    display: inline-block;
+    padding: 12px 0px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    background: #6678D9;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    position: relative;
+    border: none;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+.applyButton::before {
+    content: "";
+    display: block;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: #6678D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+}
+.applyButton::after {
+    content: "";
+    display: block;
+    background: url(../image/icon-arrow.svg) center / contain no-repeat;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.applyButton:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+.applyTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFAF5F;
+}
+.applyFormInner {
+    max-width: 810px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.applyFormItem {
+    width: calc(50% - 20px);
+    padding: 40px 0 0;
+}
+.applyFormItem > label {
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+}
+.applyFormItem > input,
+.applyFormItem > select {
+    width: 65%;
+}

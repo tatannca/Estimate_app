@@ -1,0 +1,37 @@
+.button {
+    display: inline-block;
+    padding: 12px 0px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    background: #FFAF5F;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+.button::before {
+    content: "";
+    display: block;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: #FFAF5F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+}
+.button::after {
+    content: "";
+    display: block;
+    background: url(../../image/icon-arrow.svg) center / contain no-repeat;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}

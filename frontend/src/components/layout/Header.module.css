@@ -1,0 +1,48 @@
+.headerInner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    font-size: 14px;
+}
+.buttonList {
+    display: flex;
+}
+.buttonList li:not(:last-child) {
+    margin-right: 16px;
+}
+.button {
+    width: 180px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    position: relative;
+}
+.button::after {
+    content: "";
+    display: block;
+    background: url(../../image/icon-arrow.svg) center / contain no-repeat;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.buttonRegister {
+    background: #FFAF5F;
+    border: none;
+    cursor: pointer;
+}
+.buttonLogin {
+    background: #6678D9;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.logo {
+    padding: 50px 0 40px;
+}
+.logo img {
+    margin: 0 auto;
+}
+.settingTitle {
+    text-align: center;
+    color: #FFAF5F;
+    font-size: 28px;
+    font-weight: bold;
+}
+.settingForm {
+    display: flex;
+    justify-content: center;
+}
+.settingFormInner {
+    padding: 70px 0 0;
+}
+.settingFormItem {
+    display: flex;
+    justify-content: space-between;
+}
+.settingFormItem:not(:first-child) {
+    padding: 30px 0 0;
+}
+.settingFromInput {
+    width: 270px;
+    color: #999999;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.settingFormLabel {
+    color: #999999;
+    font-weight: bold;
+}
+.settingPlan {
+    font-weight: bold;
+    color: #999999;
+}
+.settingPlan a {
+    color: #FFAF5F;
+    font-size: 12px;
+    margin-left: 1em;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0;
+}
+.button {
+    display: inline-block;
+    padding: 1em 50px;
+    background: #6678D9;
+    border: none;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    min-width: 200px;
+    position: relative;
+}
+.button::before {
+    content: "";
+    display: block;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: #6678D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+}
+.button:disabled {
+    opacity: 0.6;
+}

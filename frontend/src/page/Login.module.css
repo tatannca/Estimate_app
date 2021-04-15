@@ -1,0 +1,99 @@
+.loginContainer {
+    text-align: center;
+    padding: 100px 0 70px;
+}
+.loginBox {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFAF5F;
+    padding: 10px;
+    border-radius: 10px;
+}
+.loginBoxInner {
+    background: #fff;
+    border-radius: 10px;
+    padding: 80px 40px 130px;
+    position: relative;
+    z-index: 0;
+}
+.loginForm {
+    border-bottom: 2px solid #E6E6E6;
+}
+.loginFormGroup {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0;
+}
+.loginFormField:first-child {
+    padding: 0 40px 0 0;
+}
+.loginFormField > label {
+    font-weight: bold;
+    color: #999999;
+    padding-right: 1em;
+    vertical-align: middle;
+}
+.loginFormField > input {
+    width: 270px;
+}
+
+/* login button */
+.applyButtonWrapper {
+    padding: 40px 0 80px;
+}
+.applyButton {
+    display: inline-block;
+    padding: 12px 0px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    background: #6678D9;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    position: relative;
+    border: none;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+.applyButton::before {
+    content: "";
+    display: block;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: #6678D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+}
+.applyButton::after {
+    content: "";
+    display: block;
+    background: url(../image/icon-arrow.svg) center / contain no-repeat;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.applyButton:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.registerWrapper {
+    padding: 70px 0 0;
+}
+.registerTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFAF5F;
+    padding: 0 0 0.5em;
+}

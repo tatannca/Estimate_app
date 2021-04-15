@@ -1,0 +1,12 @@
+.notfoundContainer {
+    padding: 150px 0;
+}
+.notfoundTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0 0 20px;
+}
+.notfoundText {
+    text-align: center;
+}

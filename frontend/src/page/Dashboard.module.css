@@ -1,0 +1,67 @@
+.dashboardContainer {
+    text-align: center;
+    padding: 0 0 100px;
+}
+.dashboardLogo {
+    padding: 60px 0 0;
+}
+.dashboardLogo img {
+    margin: 0 auto;
+}
+.dashboardStepList {
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 50px 0 0;
+}
+.dashboardStepItem {
+    display: flex;
+    border: 1px solid #6678D9;
+    border-radius: 10px;
+}
+.dashboardStepItem:not(:first-child) {
+    margin-top: 16px;
+}
+.dashboardStepTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #6678D9;
+    padding: 60px 0 0;
+}
+.dashboardStepNum {
+    display: flex;
+    align-items: center;
+    color: #6678D9;
+    padding: 30px 16px 30px 20px;
+    border-right: 1px solid #6678D9;
+}
+.dashboardStepContent {
+    width: 100%;
+    max-width: 710px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboardStepIcon {
+    width: 40px;
+    padding-right: 10px;
+    box-sizing: content-box;
+}
+.dashboardTextHighlight {
+    color: #FFAF5F;
+}
+.dashboardStepNote {
+    font-size: 12px;
+    color: #999999;
+}
+.dashboardStepUpgrade {
+    font-size: 12px;
+    color: #FFAF5F;
+}
+.dashboardCreateTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6678D9;
+    padding: 70px 0 40px;
+}
