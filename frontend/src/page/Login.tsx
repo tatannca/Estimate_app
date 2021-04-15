@@ -18,7 +18,7 @@ export const Login: VFC = memo(() => {
     const onLogin = useCallback(async(e: React.MouseEvent) => {
         e.preventDefault();
         try {
-            await dispatch(login(email, password));
+            // await dispatch(login(email, password)); api無効
             history.push('/dashboard')
         } catch(err) {
             switch(err.message){
