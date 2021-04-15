@@ -4,7 +4,7 @@ import { LargeButton } from "../components/parts/LargeButton"
 import { GuestLayout } from "../components/layout/GuestLayout"
 import logo from "../image/logo.svg"
 import styles from "./Login.module.css"
-import { login } from "../store/auth"
+// import { login } from "../store/auth"
 import { useDispatch } from "react-redux"
 
 export const Login: VFC = memo(() => {
